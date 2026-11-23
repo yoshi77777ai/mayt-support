@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: #f4f7f8;
+  color: #172b35;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.75;
+}
+
+a {
+  color: #087f7a;
+}
+
+header,
+main,
+footer {
+  width: min(100% - 32px, 800px);
+  margin-inline: auto;
+}
+
+header {
+  padding-block: 40px 24px;
+}
+
+.brand {
+  margin: 0 0 4px;
+  color: #087f7a;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  color: #0f2a3d;
+  line-height: 1.35;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 5vw, 2.35rem);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.updated {
+  margin: 8px 0 0;
+  color: #536871;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-bottom: 16px;
+  padding: 20px;
+  border: 1px solid #dce6e8;
+  border-radius: 14px;
+  background: #fff;
+}
+
+section p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 24px;
+}
+
+.contact {
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding-block: 24px 48px;
+  color: #536871;
+  font-size: 0.875rem;
+}
+
+:focus-visible {
+  outline: 3px solid #f5a623;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
